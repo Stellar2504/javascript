@@ -33,3 +33,33 @@ function myFunction(){
 console.log("This is a function");
 
 }
+
+
+
+//*************************************************************************************************************************/
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubeName = "Pavanm"
+
+let anotherName = myYoutubeName;
+anotherName = "PavanMhaisne";
+
+console.log(myYoutubeName); // => "pavanm"
+console.log(anotherName);   // => "PavanMhaisne"
+
+// Because in Primitive data types a copy of the memory value is provided .....
+
+let userOne = {
+    email: "user@gmail.com",
+    upi : "3584477@ibl"
+}
+
+let userTwo = userOne ;
+
+userTwo.email = "userTwo@gmail.com" ;
+
+console.log(userOne.email)  // => userTwo@gmail.com
+console.log(userTwo.email);  // => userTwo@gmail.com
+
+// because in non primitive data types direct reference of memory value is provided.....
